@@ -12,3 +12,4 @@ steps:
     repository: $(imageName)
     command: buildAndPush
     Dockerfile: ./Dockerfile
+    containerRegistry: dockerhubvjolivet
