@@ -3,7 +3,7 @@ trigger:
   - main
 
 variables:
-  imageName: 'gcr.io/datamechanics/custom/testazdevops'
+  imageName: 'vjolivet/bzh:testazdevops'
 
 steps:
 - task: Docker@2
