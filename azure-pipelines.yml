@@ -3,12 +3,12 @@ trigger:
   - main
 
 variables:
-  imageName: 'testazdevopspipe'
+  imageName: 'gcr.io/datamechanics/custom/testazdevops'
 
 steps:
 - task: Docker@2
   displayName: Build an image
   inputs:
     repository: $(imageName)
-    command: build
+    command: buildAndPush
     Dockerfile: ./Dockerfile
